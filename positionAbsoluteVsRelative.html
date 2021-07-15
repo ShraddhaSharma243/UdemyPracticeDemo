@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+  body {
+    margin: 0; /*REMOVE BROWSER MARGIN*/
+  }
+/*With absolute positioning, the situation is a little different. In this case, the element is removed from the document flow, and any offsets you place on the element will be relative to its parent, provided its parent is not statically positioned! If the parent element is statically positioned, then the offsets will be relative to the grandparent, provided the grandparent is not statically positioned. If the grandparent is statically positioned, we keep going up the chain until we find an element that is not statically positioned. If no such element exists, the offsets are relative to the body.*/
+  .red {
+    background-color: red;
+    position:  absolute;
+    width: 200px;
+    height: 200px;
+    bottom: 10px;
+    right: 10px;
+  }
+  .wrapper {
+    width: 500px;
+    height: 400px;
+    background: #e3e3e3;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="red"></div>
+  </div>
+</body>
+</html>

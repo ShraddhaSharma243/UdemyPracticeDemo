@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    div.topLeft {
+      width: 300px;
+      height: 300px;
+      background: orange;
+      /*This is important for top and left (offset values). By default position is static and in that case top and left will not show result. */
+      position: relative;
+      /* move divs 100 pixels from the top, relative to where they'd normally sit */
+      top: 100px;
+      /* move divs 200 pixels from the left, relative to where they'd normally sit */
+      left: 200px;
+    }
+    div.topRight {
+      width: 600px;
+      height: 300px;
+      background: orange;
+      /*This is important for top and left (offset values). By default position is static and in that case top and left will not show result. */
+      position: relative;
+      /* move divs 100 pixels from the top, relative to where they'd normally sit */
+      top: 100px;
+      /* move divs 200 pixels from the left, relative to where they'd normally sit */
+      left: 700px;
+    }
+  </style>
+</head>
+<body>
+  <div class="topLeft">hello.</div>
+<div class="topRight">how are you</div>
+</body>
+</html>

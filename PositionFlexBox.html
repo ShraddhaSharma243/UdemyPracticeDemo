@@ -1,0 +1,84 @@
+<! check this link for more detail -->
+<! https://www.rithmschool.com/courses/html-css-fundamentals/flexbox  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+  <style>
+      div {
+  width: 100px;
+  height: 100px;
+  color:white;
+}
+
+.container {
+  display: flex;
+  /*FLEX DIRECTION - can reverse etc*/
+  flex-direction: column;
+  background: #F60009;
+  height: 500px;
+  width: 500px;
+}
+
+.first {
+  display: flex;
+  background: #53007A;
+  /*VERTICAL*/
+  align-items: center;
+  /*HORIZONTAL*/
+  justify-content: space-around;
+  /*ORDER  -1 first, highest last */
+  order: 1;
+}
+
+.second {
+  background: #FC9709;
+
+}
+
+.third {
+  background: #A800DF;
+  /*align-self - this property allows you to overwrite the value of align-items for particular elements. It accepts the same values as align-items.*/
+  align-self: flex-end;
+}
+
+.fourth {
+  background: #8BE7E6;
+}
+
+.fifth {
+  background: #93B112;
+}
+
+.sixth {
+  background: #E6F0BA;
+  order: -1;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="first">
+      First
+    </div>
+    <div class="second">
+      Second
+    </div>
+    <div class="third">
+      Third
+    </div>
+    <div class="fourth">
+      Fourth
+    </div>
+    <div class="fifth">
+      Fifth
+    </div>
+    <div class="sixth">
+      Sixth
+    </div>
+  </div>
+</body>
+</html>
